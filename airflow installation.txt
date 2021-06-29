@@ -1,0 +1,30 @@
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install python
+
+python --version
+
+sudo pip3 install virtualenv
+
+go to location 
+
+cd /u01/airflow
+
+virtualenv airflow_virtualenv
+
+go inside airflow_virtualenv
+then inside bin
+
+source activate
+
+set homepath
+
+export airflow_home=/u01/airflow
+export PATH=$PATH:$airflow_home
+
+--install airflow
+pip install apache-airflow
+
+airflow db init 
+
+airflow webserver -p 8080
